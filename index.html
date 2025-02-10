@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Game Showcase</title>
+    <style>
+        /* 设置页面背景和字体 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 页面内容的容器 */
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* 图片的样式 */
+        .game-image {
+            width: 80%;
+            max-width: 600px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        /* 图片的鼠标悬停效果 */
+        .game-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* 简短介绍文本 */
+        .description {
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* 页面底部的链接 */
+        .footer {
+            margin-top: 50px;
+            font-size: 16px;
+            color: #888;
+        }
+
+        /* 滚动效果 */
+        .content {
+            max-height: 100vh;
+            overflow-y: scroll;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple "Hello World" webpage hosted on GitHub Pages.</p>
+    <div class="content">
+        <div class="container">
+            <h1>Welcome to Our Game Showcase</h1>
+            <!-- 游戏图片，点击跳转到 Steam 页面的链接 -->
+            <a href="https://store.steampowered.com" target="_blank">
+                <img src="https://via.placeholder.com/600x400.png?text=Game+Image" alt="Game Image" class="game-image">
+            </a>
+            <!-- 简短介绍 -->
+            <p class="description">
+                Discover the exciting world of our latest game! Immerse yourself in action, adventure, and more. 
+                Click the image to explore more on Steam.
+            </p>
+        </div>
+        <!-- 页面底部链接 -->
+        <div class="footer">
+            <p>Powered by GitHub Pages | <a href="https://github.com" target="_blank">Visit our GitHub</a></p>
+        </div>
+    </div>
 </body>
 </html>
